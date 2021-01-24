@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="form.php">
+        <fieldset>
+            <legend>Tus datos personales</legend>
+            <div>
+                <!--<label for="nombre">Ingrese su nombre</label>
+                <input name="username" id="nombre" type="text">-->
+                <input name="username" type="text" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="correo">Ingrese su correo</label>
+                <input name="e-mail" id="correo" type="email" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tus datos en la plataforma</legend>
+            <div>
+                <label for="contraseña">Introduzca su contraseña</label>
+                <input name="password" id="contraseña" type="password" required>
+            </div>
+            <div>
+                <label for="fecha">Tu fecha de nacimiento</label>
+                <input name="birthday" id="fecha" type="date">
+            </div>
+            <div>
+                <label for="cantidad">Cantidad</label>
+                <input name="cantidad" id="cantidad" type="number" value="2" readonly>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label><input type="checkbox">Deporte</label>
+            <label><input type="checkbox">Cine</label>
+            <label><input type="checkbox">Musica</label>
+            <label><input type="checkbox">leer</label>
+        </fieldset>
+        <fieldset>
+            <legend>Tu genero</legend>
+            <label><input type="radio" name="gender">Hombre</label>
+            <!--En el caso de radio si tdodos tienen el mismo nombre entonces el navegador sólo dejará seleccionar a uno de ellos-->
+            <label><input type="radio" name="gender">Mujer</label>
+            <label><input type="radio" name="gender">Prefiero no decirlo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select y opciones</legend>
+            <label for="country">Escoge tu país</label>
+            <select name="country" id="country">
+                <optgroup label="América">
+                    <option value="pe">Perú</option>
+                    <option value="co">Colombia</option>
+                    <option value="ve">Venezuela</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="it">Italia</option>
+                </optgroup>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            </select>
+        </fieldset>
+        <legend>Tus datos en la plataforma</legend>
+        <!--<button>Enviar</button>-->
+        <input type="submit" value="Iniciar sesión">
+    </form>
+</body>
+
+</html>
