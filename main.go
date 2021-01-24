@@ -15,8 +15,8 @@ func main() {
 	// Handler /////////////////////////////////////
 	//Registrando la ruta y el handler
 	http.HandleFunc("/saludar", saludar)
-	//sube un servidor en el puerto 8080
-	http.ListenAndServe(":8080", nil)
+	//sube un servidor en el puerto 9080
+	http.ListenAndServe(":9080", nil)
 }
 
 func saludar(w http.ResponseWriter, r *http.Request) {
